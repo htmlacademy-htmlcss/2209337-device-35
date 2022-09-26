@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Мария Помогаева](https://up.htmlacademy.ru/htmlcss/35/user/2209337).
-* Наставник: `Антон Попов` (https://htmlacademy.ru/profile/joker).
+* Наставник: `Антон Попов`
 
 ---
 
