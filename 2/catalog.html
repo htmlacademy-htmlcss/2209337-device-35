@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2209337-device-35/2/">
+</head>
+  <body>
+    <header>
+      <object data="img/logo-device-gold.svg" width="145" height="36" aria-label="Логитип"></object>
+        <form action="#" method="post">
+          <input class="search" type="search" placeholder="Поиск">
+          <input class="search-submit" type="submit" value="Найти">
+        </form>
+
+      <nav class="user-navigation">
+        <a class="user-navigation-link" href="#">Войти</a>
+        <a class="user-navigation-link" href="#">Сравнить</a>
+        <a class="user-navigation-link" href="#">Корзина</a>
+      </nav>
+
+      <nav class="main-navigation">
+        <a class="catalog-link" href="#">Каталог товаров</a>
+        <a class="button-plus" href="#">+</a>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a class="catalog-link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-link" href="#">Умные часы</a>
+          </li>
+          <li class="catalog-item">
+            <a class="catalog-link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+
+        <a class="navigation-link" href="#">Доставка</a>
+        <a class="navigation-link" href="#">Гарантия</a>
+        <a class="navigation-link" href="#">Контакты</a>
+      </nav>
+    </header>
+
+    <main class="main-inner">
+      <header>
+        <h1>Моноподы для селфи</h1>
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
+      </header>
+
+      <aside class="filters">
+        <h2>фильтр:</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend class="price">Стоимость</legend>
+            <legend class="color">Цвет</legend>
+              <input type="checkbox" name="black" checked>Чёрный
+              <input type="checkbox" name="white" checked>Белый
+              <input type="checkbox" name="blue">Синий
+              <input type="checkbox" name="red">Красный
+              <input type="checkbox" name="pink">Розовый
+            <legend class="color">Bluetooth</legend>
+              <input type="radio" value="yes" checked>Есть
+              <input type="radio" value="no">Нет
+          </fieldset>
+          <button class="button-gold" type="submit">Показать</button>
+        </form>
+      </aside>
+
+      <select="sorting">
+        <h2>Сортировка</h2>
+          <option value="popular">
+            <a href="#">Популярные</a>
+          </option>
+          <option value="cheap">
+            <a href="#">Сначала дешёвые</a>
+          </option>
+          <option value="expensive">
+            <a href="#">Сначала дорогие</a>
+          </option>
+          <a class="ascending" aria-label="По возрастанию"></a>
+          <a class="descending" aria-label="По убыванию"></a>
+      </select>
+
+      <section class="product-list">
+        <article class="product-card">
+          <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+          <a class="button-gold" href="#">Подробнее</a>
+          <h3>Любительская селфи-палка</h3>
+          <p>500 ₽</p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          <a class="button-gold" href="#">Подробнее</a>
+          <h3>Профессиональная селфи-палка</h3>
+          <p>1 500 ₽</p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <a class="button-gold" href="#">Подробнее</a>
+          <h3>Непотопляемая селфи-палка</h3>
+          <p>2 500 ₽</p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <a class="button-gold" href="#">Подробнее</a>
+          <h3>Селфи-палка «Следуй за мной»</h3>
+          <p>500 ₽</p>
+        </article>
+        <a class="load-more" href="#">Загрузить ещё</a>
+      </section>
+
+      <select class="pagination">
+        <a class="pagination-prev">Назад</a>
+        <a class="pagination-link pagination-current">1</a>
+        <a class="pagination-link" href="#">2</a>
+        <a class="pagination-link" href="#">3</a>
+        <a class="pagination-link" href="#">...</a>
+        <a class="pagination-link" href="#">15</a>
+      </select>
+    </main>
+
+    <footer>
+      <object data="img/logo-device-gold.svg" width="145" height="36" aria-label="Логитип"></object>
+      <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <a class="button-footer" href="#">Доставка</a>
+      <a class="button-footer" href="#">Гарантия</a>
+      <a class="button-footer" href="#">Кредит</a>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="https://t.me/htmlacademy"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href=" https://www.youtube.com/user/htmlacademyru"></a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://twitter.com/htmlacademy_ru"></a>
+        </li>
+      </ul>
+      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    </footer>
+
+  </body>
+</html>
