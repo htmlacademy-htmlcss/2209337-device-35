@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header>
-      <object data="img/logo-device-gold.svg" width="145" height="36" aria-label="Логитип"></object>
-        <form action="#" method="post">
-          <input class="search" type="search" placeholder="Поиск">
-          <input class="search-submit" type="submit" value="Найти">
-        </form>
+      <form action="#" method="post">
+        <input class="search" type="search" placeholder="Поиск">
+        <input class="search-submit" type="submit" value="Найти">
+      </form>
 
       <nav class="user-navigation">
-        <a class="user-navigation-link" href="#">Войти</a>
+        <a class="user-navigation-link" href="#">Коля Петухов</a>
+        <a class="user-navigation-link" href="#">Выйти</a>
         <a class="user-navigation-link" href="#">Сравнить</a>
         <a class="user-navigation-link" href="#">Корзина</a>
       </nav>
@@ -46,37 +47,36 @@
         <a class="navigation-link" href="#">Гарантия</a>
         <a class="navigation-link" href="#">Контакты</a>
       </nav>
-    </header>
-
-    <main class="main-inner">
-      <header>
-        <h1>Моноподы для селфи</h1>
+      <section>
+        <h2>Моноподы для селфи</h2>
           <a class="breadcrumbs-link" href="index.html">Главная</a>
           <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           <a class="breadcrumbs-link">Моноподы для селфи</a>
-      </header>
+      </section>
+    </header>
 
+    <main class="main-inner">
       <aside class="filters">
-        <h2>фильтр:</h2>
+        <h2 class="title-inner">фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
-            <legend class="price">Стоимость</legend>
-            <legend class="color">Цвет</legend>
-              <input type="checkbox" name="black" checked>Чёрный
-              <input type="checkbox" name="white" checked>Белый
-              <input type="checkbox" name="blue">Синий
-              <input type="checkbox" name="red">Красный
-              <input type="checkbox" name="pink">Розовый
-            <legend class="color">Bluetooth</legend>
-              <input type="radio" value="yes" checked>Есть
-              <input type="radio" value="no">Нет
+            <legend>Стоимость</legend>
+            <legend>Цвет</legend>
+              <input class="filter-check" type="checkbox" name="black" checked>Чёрный
+              <input class="filter-check" type="checkbox" name="white" checked>Белый
+              <input class="filter-check" type="checkbox" name="blue">Синий
+              <input class="filter-check" type="checkbox" name="red">Красный
+              <input class="filter-check" type="checkbox" name="pink">Розовый
+            <legend>Bluetooth</legend>
+              <input class="filter-check" type="radio" value="yes" checked>Есть
+              <input class="filter-check" type="radio" value="no">Нет
           </fieldset>
           <button class="button-gold" type="submit">Показать</button>
         </form>
       </aside>
 
-      <select="sorting">
-        <h2>Сортировка</h2>
+      <select class="sorting">
+        <h2 class="title-inner">Сортировка</h2>
           <option value="popular">
             <a href="#">Популярные</a>
           </option>
@@ -94,31 +94,33 @@
         <article class="product-card">
           <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           <a class="button-gold" href="#">Подробнее</a>
-          <h3>Любительская селфи-палка</h3>
-          <p>500 ₽</p>
+          <h4>Любительская селфи-палка</h4>
+          <p class="price">500 ₽</p>
         </article>
 
         <article class="product-card">
           <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
           <a class="button-gold" href="#">Подробнее</a>
-          <h3>Профессиональная селфи-палка</h3>
-          <p>1 500 ₽</p>
+          <h4>Профессиональная селфи-палка</h4>
+          <p class="price">1 500 ₽</p>
         </article>
 
         <article class="product-card">
           <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
           <a class="button-gold" href="#">Подробнее</a>
-          <h3>Непотопляемая селфи-палка</h3>
-          <p>2 500 ₽</p>
+          <h4>Непотопляемая селфи-палка</h4>
+          <p class="price">2 500 ₽</p>
         </article>
 
         <article class="product-card">
           <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           <a class="button-gold" href="#">Подробнее</a>
-          <h3>Селфи-палка «Следуй за мной»</h3>
-          <p>500 ₽</p>
+          <h4>Селфи-палка «Следуй за мной»</h4>
+          <p class="price">500 ₽</p>
         </article>
-        <a class="load-more" href="#">Загрузить ещё</a>
+        <a class="load-more" href="#">
+          <h2 class="title-inner">Загрузить ещё</h2>
+        </a>
       </section>
 
       <select class="pagination">
@@ -128,11 +130,11 @@
         <a class="pagination-link" href="#">3</a>
         <a class="pagination-link" href="#">...</a>
         <a class="pagination-link" href="#">15</a>
+        <a class="pagination-next">Вперёд</a>
       </select>
     </main>
 
     <footer>
-      <object data="img/logo-device-gold.svg" width="145" height="36" aria-label="Логитип"></object>
       <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <a class="button-footer" href="#">Доставка</a>
       <a class="button-footer" href="#">Гарантия</a>

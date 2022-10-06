@@ -1,0 +1,310 @@
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+}
+
+body {
+  font-family: "rubik";
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.button-gold {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-header {
+  background-color: #FFE17F;
+  color: #000000;
+  text-decoration: none;
+}
+
+.search {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.main-navigation {
+  font-family: "raleway";
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+
+.catalog-link {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+}
+
+h1 {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+h2 {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+h3 {
+  font-family: "rubik";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
+
+h4 {
+  font-family: "rubik";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+p {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+dt {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+}
+
+dd {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.catalog {
+  background-image: none;
+  background: #FFE17F;
+}
+
+.catalog-link {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.main-info {
+  background: #F0F0F0;
+  position: absolute;
+  width: 1440px;
+  height: 289px;
+  left: 0;
+  top: 102px;
+}
+
+.button-delivery {
+  background: #F0F0F0;
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.delivery-line {
+  font-family: "rubik";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.subscribe-button {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.free {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.page-footer {
+  background: #444444;
+}
+
+.contacts-address-text {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.button-footer {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer-social-item {
+  background-image: src("");
+}
+
+.contacts-phone {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.htmlacademy-link {
+  background-image: none;
+}
+
+.main-inner {
+  background: #F0F0F0;
+}
+
+.breadcrumbs-link {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.title-inner {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+legend {
+  font-family: "rubik";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.filter-check {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.sorting {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.product-list {
+  background: #ffffff;
+}
+
+.price {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
+
+.pagination {
+  background: #EBEBEB;
+}
+
+.pagination-prev {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.pagination-link {
+  font-family: "rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+}
+
+.pagination-next {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
