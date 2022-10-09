@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header>
-      <object data="img/logo-device-gold.svg" width="145" height="36" aria-label="Логитип"></object>
-        <form action="#" method="post">
-          <input class="search" type="search" placeholder="Поиск">
-          <input class="search-submit" type="submit" value="Найти">
-        </form>
+    <header class="page-header">
+      <form action="#" method="post">
+        <input class="search" type="search" placeholder="Поиск">
+        <input class="search" type="submit" value="Найти">
+      </form>
 
       <nav class="user-navigation">
         <a class="user-navigation-link" href="#">Войти</a>
@@ -58,8 +58,8 @@
         <a class="slide-next" href="#">Предыдущее фото</a>
         <a class="slide-next" href="#">Следующее фото</a>
 
-        <h1 class="gallery-title">Порхает как бабочка, жалит как пчела!></h1>
-        <p class="gallery-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <h1>Порхает как бабочка, жалит как пчела!></h1>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
         <a class="button-gold" href="#">Подробнее</a>
 
         <dl>
@@ -75,24 +75,12 @@
       </section>
 
       <section class="catalog">
-        <a class="catalog-link" href="#">Виртуальная реальность
-          <object data="img/catalog-one.svg" width="96.95" height="54.99"></object>
-        </a>
-        <a class="catalog-link" href="#">Моноподы для селфи
-          <object data="img/catalog-two.svg" width="85.87" height="117"></object>
-        </a>
-        <a class="catalog-link" href="#">Экшн-камеры
-          <object data="img/catalog-three.svg" width="71.02" height="87"></object>
-        </a>
-        <a class="catalog-link" href="#">Фитнес-браслеты
-          <object data="img/catalog-four.svg" width="107.31" height="64.99"></object>
-        </a>
-        <a class="catalog-link" href="#">Умные часы
-          <object data="img/catalog-five.svg" width="56.01" height="97.98"></object>
-        </a>
-        <a class="catalog-link" href="#">Квадрокоптеры
-          <object data="img/catalog-six.svg" width="132.03" height="69.01"></object>
-        </a>
+        <a class="catalog-link" href="#">Виртуальная реальность</a>
+        <a class="catalog-link" href="#">Моноподы для селфи</a>
+        <a class="catalog-link" href="#">Экшн-камеры</a>
+        <a class="catalog-link" href="#">Фитнес-браслеты</a>
+        <a class="catalog-link" href="#">Умные часы</a>
+        <a class="catalog-link" href="#">Квадрокоптеры</a>
       </section>
 
       <section class="main-info">
@@ -101,7 +89,6 @@
             <dd>
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <object data="img/dilivery.svg" width="136" height="164"></object>
             </dd>
           </dt>
         </dl>
@@ -110,7 +97,6 @@
             <dd>
               <h2>Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же</p>
-              <object data="img/guarantee.svg" width="171" height="195"></object>
             </dd>
           </dt>
         </dl>
@@ -119,15 +105,14 @@
             <dd>
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-              <object data="img/credit.svg" width="156" height="188"></object>
             </dd>
           </dt>
         </dl>
-        <a class="button-delivery" type="button">Доставим редкий товар под заказ</a>
+        <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
       </section>
 
       <section class="about">
-        <h2 class="about-title">О нас</h2>
+        <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             <ul>
@@ -139,21 +124,21 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts-title">Контакты</h2>
+        <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
-        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+        <h3>Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
-            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
-          <h3 class="contacts-subtitle">Время работы</h3>
-          <p>пн—пт: с 10:00 до 22:00</p>
-          <p>сб—вс: с 10:00 до 19:00</p>
-          <a class="button-gold" href="#">Напишите нам</a>
+        <h3>Время работы</h3>
+        <p>пн—пт: с 10:00 до 22:00</p>
+        <p>сб—вс: с 10:00 до 19:00</p>
+        <a class="button-gold" href="#">Напишите нам</a>
       </section>
 
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <h2>Подпишитесь на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
         <form class="subscribe-form" action="" method="post">
           <input class="subscribe-form" type="email" placeholder="Ваш e-mail">
@@ -163,8 +148,7 @@
       </section>
     </main>
 
-    <footer>
-      <object data="img/logo-device-gold.svg" width="145" height="36" aria-label="Логитип"></object>
+    <footer class="page-footer">
       <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <a class="button-footer" href="#">Доставка</a>
       <a class="button-footer" href="#">Гарантия</a>
@@ -181,8 +165,7 @@
         </li>
       </ul>
       <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/"></a>
     </footer>
-
   </body>
 </html>
