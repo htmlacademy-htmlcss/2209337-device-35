@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "rubik" "Arial", sans-serif;
+  font-family: "rubik";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "rubik", "Arial", sans-serif;
+  font-family: "rubik";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "raleway", "Arial", sans-serif;
+  font-family: "raleway";
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
@@ -30,10 +30,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "rubik";
+  font-family: "rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.6em;
+  line-height: 1.6;
   color: #000;
   background-color: #fff;
 }
@@ -45,10 +45,10 @@ a {
 }
 
 h1 {
-  font-family: "raleway";
+  font-family: "raleway", "Verdana", sans-serif;
   font-weight: 800;
   font-size: 50px;
-  line-height: 1em;
+  line-height: 1;
 }
 
 p {
@@ -69,64 +69,55 @@ p {
 }
 
 .logo {
-  background-image: url(/img/logo-device-gold.svg);
+  background-image: url(../img/logo-device-gold.svg);
   color: #000;
   display: block;
   margin-left: auto;
 }
 
 .search {
-  font-family: "rubik";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.2;
   opacity: 0.3;
   width: 359px;
 }
 
 .button-search {
-  font-family: "rubik";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.2;
   width: 160px;
 }
 
 .user-navigation {
-  width: 497px;
+  width: 500px;
   margin-left: auto;
 }
 
 .catalog-link-main {
-  font-family: "raleway";
-  font-weight: 800;
-  line-height: 1.1em;
+  font-family: "raleway", "Verdana", sans-serif;
+  line-height: 1.1;
   text-transform: uppercase;
   margin-right: auto;
 }
 
 .catalog-item {
-  font-family: "rubik";
-  font-style: normal;
   font-size: 16px;
-  line-height: 1.1em;
+  line-height: 1.1;
   margin: 0;
   padding: 0;
 }
 
 .navigation-link {
-  font-family: "raleway";
-  font-weight: 800;
-  line-height: 1.1em;
+  font-family: "raleway", "Verdana", sans-serif;
+  line-height: 1.1;
   text-transform: uppercase;
   width: 500px;
   margin-left: auto;
 }
 
 .button-gold {
-  font-family: "raleway";
-  font-weight: 800;
-  line-height: 1.1em;
+  font-family: "raleway", "Verdana", sans-serif;
+  line-height: 1.1;
   text-align: center;
   text-transform: uppercase;
 }
@@ -138,24 +129,19 @@ p {
 }
 
 .characteristic {
-  font-family: "rubik";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.8em;
+  line-height: 1.8;
 }
 
 .dimension {
-  font-family: "rubik";
-  font-weight: 400;
   font-size: 36px;
-  line-height: 0.8em;
+  line-height: 0.8;
 }
 
 .catalog-link {
-  font-family: "raleway";
-  font-weight: 800;
+  font-family: "raleway", "Verdana", sans-serif;
   font-size: 18px;
-  line-height: 1.3em;
+  line-height: 1.3;
   display: flex;
   justify-content: space-between;
   width: 160px;
@@ -172,13 +158,13 @@ p {
 }
 
 .information {
-  width: 475px;
+  width: 480px;
 }
 
 .button-delivery {
-  font-family: "raleway";
+  font-family: "raleway", "Verdana", sans-serif;
   font-size: 20px;
-  line-height: 1.1em;
+  line-height: 1.1;
   text-align: center;
   text-transform: uppercase;
   background-color: #F0F0F0;
@@ -190,23 +176,19 @@ p {
 }
 
 .contacts {
-  width: 532px;
+  width: 530px;
 }
 
 .delivery-item {
-  font-family: "rubik";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
 
 .contacts-title {
-  font-family: "rubik";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.2em;
+  line-height: 1.2;
   color: #444
 }
 
@@ -220,7 +202,7 @@ p {
 }
 
 .subscribe-title {
-  width: 348px;
+  width: 350px;
 }
 
 .subscribe-text {
@@ -234,9 +216,9 @@ p {
 }
 
 .subscribe-button {
-  font-family: "raleway";
+  font-family: "raleway", "Verdana", sans-serif;
   font-size: 18px;
-  line-height: 1.1em;
+  line-height: 1.1;
   text-transform: uppercase;
 }
 
@@ -249,21 +231,21 @@ p {
 }
 
 .footer-social {
-  width: 239px;
+  width: 240px;
 }
 
 .logo {
-  background-image: url(/img/logo-device-gold.svg);
+  background-image: url(../img/logo-device-gold.svg);
 }
 
 .footer-link {
-  width: 444px;
+  width: 445px;
 }
 
 .button-footer {
-  font-family: "raleway";
+  font-family: "raleway", "Verdana", sans-serif;
   font-size: 18px;
-  line-height: 1.1em;
+  line-height: 1.1;
   text-transform: uppercase;
   color: #FFF;
 }
@@ -281,19 +263,13 @@ p {
 }
 
 .breadcrumbs-link {
-  font-family: "rubik";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.2;
 }
 
 .main-inner {
-  font-family: "rubik";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.2;
   color: #000;
   background-color: #F0F0F0;
 }
@@ -301,7 +277,7 @@ p {
 .text-filter {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.1em;
+  line-height: 1.1;
 }
 
 .product-list {
@@ -311,30 +287,26 @@ p {
 .title-product {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.1em;
+  line-height: 1.1;
 }
 
 .price {
   font-size: 18px;
-  line-height: 1.1em;
+  line-height: 1.1;
   text-align: right;
   color: #444;
 }
 
 .pagination-prev {
-  font-family: 'Raleway';
+  font-family: 'Raleway', "Verdana", sans-serif;
   font-size: 18px;
-  line-height: 1.1em;
+  line-height: 1.1;
   text-transform: uppercase;
   color: #444;
 }
 
 .pagination-link {
   font-size: 16px;
-  line-height: 1.2em;
-  opacity: 0.3;
-}
+  line-height: 1.2;
 
-.pagination-current {
-  opacity: 0.6;
 }
