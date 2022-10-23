@@ -7,40 +7,40 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="/index.html"></a>
-      <form action="#" method="post">
-        <input class="search" type="search" placeholder="Поиск по сайту">
-        <input class="button-search" type="submit" value="Найти">
-      </form>
-
-      <nav class="user-navigation">
-        <a class="user-navigation-link" href="#">Коля Петухов</a>
-        <a class="user-navigation-link" href="#">Выйти</a>
-        <a class="user-navigation-link" href="#">Сравнить</a>
-        <a class="user-navigation-link" href="#">Корзина</a>
-      </nav>
-
+      <a class="logo" href="index.html">Device</a>
+        <div class="header-navigation">
+          <form action="#" method="post">
+            <input class="search" type="search" placeholder="Поиск по сайту">
+            <input class="button-search" type="submit" value="Найти">
+          </form>
+          <nav class="user-navigation">
+            <a class="user-navigation-link" href="#">Войти</a>
+            <a class="user-navigation-link" href="#">Выйти</a>
+            <a class="user-navigation-link" href="#">Сравнить</a>
+            <a class="user-navigation-link" href="#">Корзина</a>
+          </nav>
+        </div>
       <nav class="main-navigation">
-        <a class="catalog-link" href="#">Каталог товаров</a>
+        <a class="catalog-link-main" href="catalog.html">Каталог товаров</a>
         <a class="button-plus" href="#">+</a>
         <ul class="catalog-list">
-          <li class="catalog-item">
-            <a class="catalog-link" href="#">Виртуальная реальность</a>
+          <li>
+            <a class="catalog-item" href="#">Виртуальная реальность</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link">Моноподы для селфи</a>
+          <li>
+            <a class="catalog-item" href="catalog.html">Моноподы для селфи</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link" href="#">Экшн-камеры</a>
+          <li>
+            <a class="catalog-item" href="#">Экшн-камеры</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link" href="#">Фитнес-браслеты</a>
+          <li>
+            <a class="catalog-item" href="#">Фитнес-браслеты</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link" href="#">Умные часы</a>
+          <li>
+            <a class="catalog-item" href="#">Умные часы</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link" href="#">Квадрокоптеры</a>
+          <li>
+            <a class="catalog-item" href="#">Квадрокоптеры</a>
           </li>
         </ul>
 
@@ -48,15 +48,18 @@
         <a class="navigation-link" href="#">Гарантия</a>
         <a class="navigation-link" href="#">Контакты</a>
       </nav>
-      <section>
-        <h1>Моноподы для селфи</h1>
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-          <a class="breadcrumbs-link">Моноподы для селфи</a>
-      </section>
     </header>
 
     <main class="main-inner">
+      <section class="breadcrumbs">
+        <h1>Моноподы для селфи</h1>
+        <div class="breadcrumbs-link">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
+        </div>
+
+      </section>
       <aside class="filters">
         <h2 class="title-inner">фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -136,23 +139,28 @@
     </main>
 
     <footer class="page-footer">
-      <div class="footer-social" >
-        <a class="logo" href="/index.html"></a>
-        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </div>
-      <div class="footer-link">
-        <a class="button-footer" href="#">Доставка</a>
-        <a class="button-footer" href="#">Гарантия</a>
-        <a class="button-footer" href="#">Кредит</a>
-        <a class="button-social" href="https://t.me/htmlacademy"></a>
-        <a class="button-social" href=" https://www.youtube.com/user/htmlacademyru"></a>
-        <a class="button-social" href="https://twitter.com/htmlacademy_ru"></a>
-      </div>
-      <div class="footer-contact">
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"></a>
+      <div class="footer-container">
+        <div class="footer-address">
+          <a class="logo-footer" href="index.html"></a>
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </div>
+        <section class="footer-navigation">
+          <div class="button-footer-container">
+            <a class="button-footer" href="#">Доставка</a>
+            <a class="button-footer" href="#">Гарантия</a>
+            <a class="button-footer" href="#">Кредит</a>
+          </div>
+          <div  class="button-social">
+            <a class="tme" href="https://t.me/htmlacademy">t.me</a>
+            <a class="youtube" href=" https://www.youtube.com/user/htmlacademyru">youtube</a>
+            <a class="twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+          </div>
+        </section>
+        <div class="footer-contacts">
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.htmlacademy</a>
+        </div>
       </div>
     </footer>
-
   </body>
 </html>
