@@ -1,0 +1,440 @@
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "rubik", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-family: "raleway", "Verdana", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1;
+}
+
+p {
+  color: #444;
+}
+
+.main-container{
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.page-header {
+  background-color: #FFE17F;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin-top: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  background-image: url(../img/logo-device-gold.svg);
+  background-repeat: no-repeat;
+  color: #000;
+  display: inline-block;
+  margin-left: auto;
+  margin-top: -20px;
+  margin-left: 60px;
+  width: 100%;
+  height: 36px;
+}
+
+.header-navigation{
+  display: flex;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 46px;
+  align-items: center;
+}
+
+.search {
+  font-size: 16px;
+  line-height: 1.2;
+  opacity: 0.3;
+  width: 360px;
+}
+
+.button-search {
+  font-size: 16px;
+  line-height: 1.2;
+  width: 160px;
+}
+
+.user-navigation {
+  display: flex;
+  padding-left: 25px;
+  padding-right: 0;
+  gap: 55px;
+}
+
+.main-navigation {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 36px;
+}
+
+.button-plus {
+  margin-right: auto;
+}
+
+.catalog-link-main {
+  font-family: "raleway", "Verdana", sans-serif;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.catalog-list {
+  position: absolute;
+  display: none;
+}
+
+.catalog-item {
+  font-size: 16px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  font-family: "raleway", "Verdana", sans-serif;
+  text-transform: uppercase;
+}
+
+.button-gold {
+  font-family: "raleway", "Verdana", sans-serif;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slide-gallery {
+  display: grid;
+  grid-template-columns: 1 / 2;
+  gap: 40px;
+}
+
+.picture {
+  grid-column: 1;
+}
+
+.description {
+  grid-column: 2;
+}
+
+.characteristic {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.dimension {
+  font-size: 36px;
+  line-height: 0.8;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 33px;
+  margin-bottom: 70px;
+}
+
+.catalog-link {
+  font-family: "raleway", "Verdana", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  width: calc(100% / 6);
+}
+
+.list-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+}
+
+.information {
+  display: block;
+  grid-row: 1 / 4;
+  grid-column-start: 2;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 1 / 3;
+}
+
+.about {
+  grid-column: 1 / 2;
+    width: 520px;
+}
+
+.contacts {
+  grid-column: 2 / 3;
+  width: 530px;
+}
+
+.subscribe {
+  display: grid;
+}
+
+.button-info {
+  width: 290px;
+}
+
+.button-delivery {
+  font-family: "raleway", "Verdana", sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  background-color: #F0F0F0;
+  width: 1160px;
+  grid-template-columns: 1 / 3;
+}
+
+.delivery-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.contacts-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #444
+}
+
+.contacts-phone {
+  text-decoration: underline;
+}
+
+.subscribe {
+  background-color: #F0F0F0;
+  width: 100%;
+}
+
+.subscribe-title {
+  width: 350px;
+}
+
+.subscribe-text {
+  width: 560px;
+
+}
+
+.subscribe-form {
+  width: 810px;
+  opacity: 0.5;
+}
+
+.subscribe-button {
+  font-family: "raleway", "Verdana", sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  background-color: #444;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+}
+
+.footer-address {
+  width: 240px;
+  margin-right: 124px;
+}
+
+.logo-footer {
+  background-image: url(../img/logo-device-gold.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: auto;
+  width: 100%;
+  height: 36px;
+  margin-bottom: 35px;
+}
+
+.contacts-address-text {
+  color: #FFF;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.button-footer {
+  font-family: "raleway", "Verdana", sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  justify-content: center;
+}
+
+.button-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 77px;
+}
+
+.button-social {
+  display: flex;
+  gap: 15px;
+}
+
+.tme {
+  background-image: url(../img/t.me.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.youtube {
+  background-image: url(../img/youtube.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.twitter {
+  background-image: url(../img/twitter.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-contacts {
+  width: 175px;
+  margin-left: auto;
+  margin-top: 80px;
+}
+
+.contacts-phone {
+  text-decoration: underline;
+  color: #FFF;
+  font-size: 16px;
+  margin-bottom: 63px;
+}
+
+.htmlacademy {
+  background-image: url(../img/htmlacademy.svg);
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs {
+  background-color: #FFF;
+  padding-left: 200px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: none;
+  display: flex;
+  gap: 36px;
+  padding-bottom: 34px;
+}
+
+.main-inner {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000;
+  background-color: #F0F0F0;
+}
+
+.text-filter {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.product-list {
+  background-color: #fff;
+}
+
+.title-product {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.price {
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: right;
+  color: #444;
+}
+
+.pagination-prev {
+  font-family: 'Raleway', "Verdana", sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 1.2;
+
+}
