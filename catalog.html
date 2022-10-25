@@ -52,7 +52,7 @@
 
     <main class="main-inner">
       <section class="breadcrumbs">
-        <h1>Моноподы для селфи</h1>
+        <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
         <div class="breadcrumbs-link">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
           <a class="breadcrumbs-link" href="#">Каталог товаров</a>
@@ -81,6 +81,7 @@
 
       <select class="sorting">
         <h2 class="title-inner">Сортировка</h2>
+        <div class="choice">
           <option value="popular">
             <a href="#">Популярные</a>
           </option>
@@ -90,6 +91,7 @@
           <option value="expensive">
             <a href="#">Сначала дорогие</a>
           </option>
+        </div>
           <a class="button-sorting" aria-label="По возрастанию"></a>
           <a class="button-sorting" aria-label="По убыванию"></a>
       </select>
@@ -97,45 +99,45 @@
       <section class="product-list">
         <article class="product-card">
           <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-          <a class="button-gold" href="#">Подробнее</a>
+          <!-- <a class="button-gold" href="#">Подробнее</a> -->
           <p class="title-product">Любительская селфи-палка</p>
           <p class="price">500 ₽</p>
         </article>
 
         <article class="product-card">
           <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-          <a class="button-gold" href="#">Подробнее</a>
+          <!-- <a class="button-gold" href="#">Подробнее</a> -->
           <p class="title-product">Профессиональная селфи-палка</p>
           <p class="price">1 500 ₽</p>
         </article>
 
         <article class="product-card">
           <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-          <a class="button-gold" href="#">Подробнее</a>
+          <!-- <a class="button-gold" href="#">Подробнее</a> -->
           <p class="title-product">Непотопляемая селфи-палка</p>
           <p class="price">2 500 ₽</p>
         </article>
 
         <article class="product-card">
           <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-          <a class="button-gold" href="#">Подробнее</a>
+          <!-- <a class="button-gold product-button" href="#">Подробнее</a> -->
           <p class="title-product">Селфи-палка «Следуй за мной»</p>
           <p class="price">500 ₽</p>
         </article>
-        <a class="load-more" href="#">
-          <h2 class="title-inner">Загрузить ещё</h2>
-        </a>
-      </section>
+        <a class="load-more" href="#">Загрузить ещё</a>
 
-      <select class="pagination">
-        <a class="pagination-prev">Назад</a>
-        <a class="pagination-link pagination-current">1</a>
-        <a class="pagination-link" href="#">2</a>
-        <a class="pagination-link" href="#">3</a>
-        <a class="pagination-link" href="#">...</a>
-        <a class="pagination-link" href="#">15</a>
-        <a class="pagination-next">Вперёд</a>
-      </select>
+        <article class="pagination">
+          <a class="pagination-prev">Назад</a>
+          <div class="pagination-numbers">
+            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link" href="#">15</a>
+          </div>
+          <a class="pagination-next">Вперёд</a>
+        </article>
+      </section>
     </main>
 
     <footer class="page-footer">
