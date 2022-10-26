@@ -13,13 +13,12 @@
             <input class="search" type="search" placeholder="Поиск по сайту">
             <input class="button-search" type="submit" value="Найти">
           </form>
-          <nav class="user-navigation">
-            <a class="user-navigation-link" href="#">Войти</a>
-            <a class="user-navigation-link visually-hidden" href="#">Выйти</a>
-            <a class="user-navigation-link" href="#">Сравнить</a>
-            <a class="user-navigation-link" href="#">Корзина</a>
-          </nav>
+          <a class="user-navigation-link" href="#">Войти</a>
+          <a class="user-navigation-link visually-hidden" href="#">Выйти</a>
+          <a class="user-navigation-link" href="#">Сравнить</a>
+          <a class="user-navigation-link" href="#">Корзина</a>
         </div>
+
       <nav class="main-navigation">
         <a class="catalog-link-main" href="catalog.html">Каталог товаров</a>
         <a class="button-plus" href="#">+</a>
@@ -55,8 +54,8 @@
         <article class="slide-gallery active">
           <img class="picture" src="img/copter-main.png" width="560" height="560" alt="Квадрокоптер">
             <div class="description">
-              <h1>Порхает как бабочка, жалит как пчела!></h1>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <h1 class="gallery-title">Порхает как бабочка, жалит как пчела!</h1>
+              <p class="gallery-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="button-gold" href="#">Подробнее</a>
              <dl class="table">
                 <dt class="characteristic">Дальность полета</dt>
@@ -70,8 +69,8 @@
         <article class="slide-gallery visually-hidden">
           <img class="picture" src="img/fitness-bracelet.png" width="560" height="560" alt="Фитнес браслет">
             <div class="description">
-              <h1>Худеем правильно!</h1>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <h1  class="gallery-title">Худеем правильно!</h1>
+              <p class="gallery-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="button-gold" href="#">Подробнее</a>
                 <dl>
                   <dt class="characteristic">Без подзарядки</dt>
@@ -83,8 +82,8 @@
         <article class="slide-gallery visually-hidden">
           <img class="picture" src="img/selfie-stick.png" width="560" height="560" alt="Палка для селфи">
             <div class="description">
-              <h1>Делай селфи, как Бен Стиллер!</h1>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <h1  class="gallery-title">Делай селфи, как Бен Стиллер!</h1>
+              <p class="gallery-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="button-gold" href="#">Подробнее</a>
                 <dl>
                   <dt class="characteristic">Длина палки</dt>
@@ -120,18 +119,18 @@
         <dl class="list-info">
           <dt class="button-info"><button class="button-gold" type="button">Доставка</button></dt>
             <dd class="information active">
-              <h1>Доставка</h1>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <h1 class="info-title">Доставка</h1>
+              <p class="info-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </dd>
           <dt class="button-info"><button class="button-gold" type="button">Гарантия</button></dt>
             <dd class="information visually-hidden">
-              <h1>Гарантия</h1>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же</p>
+              <h1 class="info-title">Гарантия</h1>
+              <p class="info-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же</p>
             </dd>
           <dt class="button-info"><button class="button-gold" type="button">Кредит</button></dt>
             <dd class="information visually-hidden">
-              <h1>Кредит</h1>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <h1 class="info-title">Кредит</h1>
+              <p class="info-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </dd>
         </dl>
         <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
@@ -139,40 +138,43 @@
 
     <div class="data">
       <section class="about">
-          <h1>О нас</h1>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-              <ul>
+          <h1 class="about-title">О нас</h1>
+            <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+            <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+              <ul class="delivery-list">
                 <li class="delivery-item">Меловые линии</li>
                 <li class="delivery-item">СДИК</li>
                 <li class="delivery-item">ТоксБерри</li>
               </ul>
-           <a class="button-gold" href="#">Подробнее о нас</a>
+            <a class="button-gold" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
-          <h1>Контакты</h1>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
-          <h2 class="contacts-title">Интернет-магазин «Девайс»</h2>
+          <h1 class="contacts-title">Контакты</h1>
+          <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
+          <h2 class="contacts-title-2">Интернет-магазин «Девайс»</h2>
             <address class="contacts-address">
-              <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
               <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
-          <h2 class="contacts-title">Время работы</h2>
-          <p>пн—пт: с 10:00 до 22:00</p>
-          <p>сб—вс: с 10:00 до 19:00</p>
+          <h2 class="contacts-title-2">Время работы</h2>
+          <p class="contacts-text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
           <a class="button-gold" href="#">Напишите нам</a>
         </section>
     </div>
 
       <section class="subscribe">
-        <h1 class="subscribe-title">Подпишитесь на рассылку</h1>
-        <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-        <form class="subscribe-form" action="" method="post">
-          <input class="subscribe-form" type="email" placeholder="Ваш e-mail">
-          <button class="subscribe-button" type="submit">Подписаться</button>
-        </form>
-        <small class="free">Это бесплатно</small>
+        <div class="subscribe-info">
+          <h1 class="subscribe-title">Подпишитесь на рассылку</h1>
+          <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        </div>
+        <div class="subscribe-activ">
+          <form class="subscribe-form" action="" method="post">
+            <input class="subscribe-form" type="email" placeholder="Ваш e-mail">
+            <button class="subscribe-button" type="submit">Подписаться</button>
+          </form>
+          <small class="free">Это бесплатно</small>
+        </div>
       </section>
     </main>
 
@@ -195,7 +197,7 @@
           </div>
         </section>
         <div class="footer-contacts">
-          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">.htmlacademy</a>
         </div>
       </div>
