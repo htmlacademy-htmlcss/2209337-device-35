@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <base href="https://htmlacademy-htmlcss.github.io/2209337-device-35/6/">
+</head>
+  <body class="page-inner">
+    <header class="page-header">
+      <a class="logo" href="index.html">Device</a>
+        <div class="header-navigation">
+          <form action="#" method="post">
+            <input class="search" type="search" placeholder="Поиск по сайту">
+            <input class="button-search" type="submit" value="Найти">
+          </form>
+          <a class="user-navigation-link" href="#">Войти</a>
+          <a class="user-navigation-link" href="#">Коля Петухов</a>
+          <a class="user-navigation-link" href="#">Сравнить</a>
+          <a class="user-navigation-link" href="#">Корзина</a>
+        </div>
+      <nav class="main-navigation">
+        <a class="catalog-link-main" href="catalog.html">Каталог товаров</a>
+        <a class="button-plus" href="#">+</a>
+        <ul class="catalog-list">
+          <li>
+            <a class="catalog-item" href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a class="catalog-item" href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a class="catalog-item" href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a class="catalog-item" href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a class="catalog-item" href="#">Умные часы</a>
+          </li>
+          <li>
+            <a class="catalog-item" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+
+        <a class="navigation-link" href="#">Доставка</a>
+        <a class="navigation-link" href="#">Гарантия</a>
+        <a class="navigation-link" href="#">Контакты</a>
+      </nav>
+    </header>
+
+    <main class="main-inner">
+      <section class="breadcrumbs">
+        <h1 class="breadcrumbs-title">Моноподы для селфи</h1>
+        <div class="breadcrumbs-link">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
+        </div>
+
+      </section>
+      <aside class="filters">
+        <h2 class="title-inner">фильтр:</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend class="text-filter">Стоимость</legend>
+            <legend class="text-filter">Цвет</legend>
+              <input class="filter-check" type="checkbox" name="black" checked>Чёрный
+              <input class="filter-check" type="checkbox" name="white" checked>Белый
+              <input class="filter-check" type="checkbox" name="blue">Синий
+              <input class="filter-check" type="checkbox" name="red">Красный
+              <input class="filter-check" type="checkbox" name="pink">Розовый
+            <legend class="text-filter">Bluetooth</legend>
+              <input class="filter-check" type="radio" value="yes" checked>Есть
+              <input class="filter-check" type="radio" value="no">Нет
+          </fieldset>
+          <button class="button-gold" type="submit">Показать</button>
+        </form>
+      </aside>
+
+      <select class="sorting">
+        <h2 class="title-inner">Сортировка</h2>
+        <div class="choice">
+          <option value="popular">
+            <a href="#">Популярные</a>
+          </option>
+          <option value="cheap">
+            <a href="#">Сначала дешёвые</a>
+          </option>
+          <option value="expensive">
+            <a href="#">Сначала дорогие</a>
+          </option>
+        </div>
+          <a class="button-sorting" aria-label="По возрастанию"></a>
+          <a class="button-sorting" aria-label="По убыванию"></a>
+      </select>
+
+      <section class="product-list">
+        <article class="product-card">
+          <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+          <!-- <a class="button-gold" href="#">Подробнее</a> -->
+          <p class="title-product">Любительская селфи-палка</p>
+          <p class="price">500 ₽</p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          <!-- <a class="button-gold" href="#">Подробнее</a> -->
+          <p class="title-product">Профессиональная селфи-палка</p>
+          <p class="price">1 500 ₽</p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <!-- <a class="button-gold" href="#">Подробнее</a> -->
+          <p class="title-product">Непотопляемая селфи-палка</p>
+          <p class="price">2 500 ₽</p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <!-- <a class="button-gold product-button" href="#">Подробнее</a> -->
+          <p class="title-product">Селфи-палка «Следуй за мной»</p>
+          <p class="price">500 ₽</p>
+        </article>
+        <a class="load-more" href="#">Загрузить ещё</a>
+
+        <article class="pagination">
+          <a class="pagination-prev">Назад</a>
+          <div class="pagination-numbers">
+            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link" href="#">15</a>
+          </div>
+          <a class="pagination-next">Вперёд</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-container">
+        <div class="footer-address">
+          <a class="logo-footer" href="index.html"></a>
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </div>
+        <section class="footer-navigation">
+          <div class="button-footer-container">
+            <a class="button-footer" href="#">Доставка</a>
+            <a class="button-footer" href="#">Гарантия</a>
+            <a class="button-footer" href="#">Кредит</a>
+          </div>
+          <div  class="button-social">
+            <a class="tme" href="https://t.me/htmlacademy">t.me</a>
+            <a class="youtube" href=" https://www.youtube.com/user/htmlacademyru">youtube</a>
+            <a class="twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+          </div>
+        </section>
+        <div class="footer-contacts">
+          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.htmlacademy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
