@@ -428,9 +428,7 @@ p {
   column-gap: 0;
   row-gap: 35px;
   margin-top: 70px;
-  background-color: #F0F0F0;
-  width: 100%;
-  height: 290px;
+  background: linear-gradient(to bottom, #FFFFFF 0, #FFFFFF 30%, #F0F0F0 0, #F0F0F0 100%);
 }
 
 .info-title {
@@ -446,6 +444,9 @@ p {
   font-size: 18px;
   line-height: 1.6;
   display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
   text-transform: uppercase;
   grid-column: 1 / 2;
   border: none;
@@ -459,7 +460,7 @@ p {
   width: 160px;
   height: 8px;
   background-color: #FFE17F;
-  top: 20px;
+  top: 10px;
   left: -2px;
 }
 
@@ -526,17 +527,23 @@ p {
 }
 
 .img-delivery {
+  background-color: #FFE17F;
+  width: 125px;
+  height: 100px;
+}
+
+.car {
   background-image: url(../img/dilivery-submit.svg);
   background-repeat: no-repeat;
-  background-color: #FFE17F;
-  padding: 35px 39px;
 }
 
 .delivery-info {
   background-image: url(../img/dilivery-info.svg);
   background-repeat: no-repeat;
   background-color: #F0F0F0;
-  padding: 30px 42.5px;
+  margin: 30px 42px;
+  width: 40px;
+  height: 40px;
 }
 
 .button-delivery:hover .img-delivery {
@@ -643,7 +650,7 @@ p {
 }
 
 .contacts-address {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-style: normal;
 }
 
@@ -653,9 +660,9 @@ p {
 
 .subscribe {
   background-color: #F0F0F0;
-  width: 100%;
   display: grid;
   margin-top: 70px;
+  width: 100%;
 }
 
 .subscribe-info {
@@ -679,7 +686,7 @@ p {
 
 .subscribe-activ {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   margin-bottom: 56px;
 }
@@ -701,10 +708,20 @@ p {
   border: 3px solid #C4C4C4;
 }
 
+.free-conteiner {
+  display: flex;
+  align-items: center;
+}
+
 .img-free {
   background-image: url(../img/free.svg);
   background-repeat: no-repeat;
-  margin-right: 16px;
+  width: 14px;
+  height: 14px;
+}
+
+.free {
+  padding-left: 16px;
 }
 
 .page-footer {
@@ -722,6 +739,7 @@ p {
 .footer-address {
   width: 240px;
   margin-right: 124px;
+  position: relative;
 }
 
 .logo-footer {
@@ -749,7 +767,16 @@ p {
   color: #FFF;
   font-size: 16px;
   width: 100%;
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 64px;
+}
+
+.line-footer {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height:7px;
+  background-color: #FFC700;
 }
 
 .button-footer {
@@ -838,6 +865,7 @@ p {
 }
 
 .htmlacademy-link {
+  display: inline-block;
   margin-top: 63px;
 }
 
