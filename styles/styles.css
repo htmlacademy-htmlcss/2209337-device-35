@@ -132,13 +132,38 @@ a {
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 50px;
+  align-items: center;
+  column-gap: 40px;
   padding: 0 60px;
 }
 
-.button-plus {
-  margin-right: 215px;
+/* .button-plus-check {
+  display: none;
 }
+
+.button-plus-check:checked + .button-plus::before {
+  background-image: url(../img/button-minus.svg);
+} */
+
+.button-plus {
+  font-size: 0;
+  margin-right: 200px;
+  width: 50px;
+  height: 51px;
+  background-image: url(../img/button-plus.svg);
+background-repeat: no-repeat;
+  display: inline-block;
+  opacity: 0.6;
+}
+
+/* .button-plus::before {
+  background-image: url(../img/button-plus.svg);
+  display: inline-block;
+  font-size: 0;
+  margin-right: 200px;
+  width: 50px;
+  height: 50px;
+} */
 
 .catalog-link-main {
   font-family: Raleway, "Verdana", sans-serif;
@@ -175,6 +200,18 @@ a {
   line-height: 1.1;
   margin: 0;
   padding: 0;
+}
+
+.catalog-item:hover {
+  opacity: 0.6;
+}
+
+.catalog-item:active {
+  opacity: 0.3;
+}
+
+.catalog-item:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .navigation-link {
@@ -369,11 +406,12 @@ a {
 
 .picture {
   grid-column: 1;
+  margin-top: -34px;
 }
 
 .description {
   grid-column: 2;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .gallery-title {
@@ -821,6 +859,20 @@ a {
   border: 3px solid #C4C4C4;
 }
 
+.subscribe-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.subscribe-button:active {
+  opacity: 0.3;
+}
+
+.subscribe-button:focus {
+  color: #000000;
+  outline: 2px solid #AF4FFF;
+}
+
 .free-conteiner {
   display: flex;
   align-items: center;
@@ -1002,26 +1054,29 @@ a {
 /* Каталог товаров */
 .page-inner {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+.catalog-inner {
+  padding: 0 60px 36px;
 }
 
 .conteiner-inner {
+  background-color: #F0F0F0;
+  margin: 0 auto;
+}
+
+.main-inner {
   width: 1660px;
   margin: 0 auto;
-  padding: 0 140px;
   display: grid;
   grid-template-areas:
     "filters sorting"
     "filters product-list";
   grid-template-columns: 320px 1fr;
-}
-
-.main-inner {
   font-size: 16px;
   line-height: 1.2;
   color: #000000;
-  background-color: #F0F0F0;
-  margin: 0 auto;
 }
 
 .breadcrumbs {
@@ -1057,41 +1112,144 @@ a {
 
 /* Сортировка */
 
-.sorting {
-  display: flex;
-  justify-content: space-between;
-}
-
-.sorting-title {
+.title-inner {
   font-family: Raleway;
   font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sorting {
+  grid-area: sorting;
+  width: 840px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .choice {
-  width: 140px;
+  height: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  line-height: 1.6;
+  border: none;
+  background-color: #F0F0F0;
+}
+
+.choice:hover {
+  opacity: 0.6;
+}
+
+.choice:active {
+  opacity: 0.3;
+}
+
+.choice:focus {
+  outline:2px solid #AF4FFF;
+}
+
+.button-sorting {
+  display: flex;
 }
 
 .button-sorting-up {
   background-image: url(../img/sorting-up.svg);
   background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0.6;
+  width: 30px;
+  height: 30px;
+}
 
+.button-sorting-down {
+  background-image: url(../img/sorting-down.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0.6;
+  width: 30px;
+  height: 30px;
+}
+
+.button-sorting:hover {
+  opacity: 0.5;
+}
+
+.button-sorting:active {
+  opacity: 1;
+}
+
+.button-sorting:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 /* Фильтры */
 
 .filters {
-  display: flex;
-  flex-wrap: wrap;
+
+
   grid-area: filters;
   width: 320px;
-  flex-direction: column;
-  padding: 25px 60px auto 60px;
+
 }
 
 .text-filter {
-  font-weight: 700;
   font-size: 18px;
   line-height: 1.1;
+}
+
+.button-gold .filter-button {
+  font-family: Raleway, "Verdana", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+}
+
+.button-gold .filter-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #FFE17F;
+  top: 20px;
+  right: 1px;
+  z-index: -1;
+}
+
+.button-gold .filter-button:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #FFE17F;
+  z-index: -1;
+  top: 3px;
+}
+
+.button-gold .filter-button:active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #FFC700;
+  z-index: -1;
+  top: 3px;
+}
+
+.button-gold .filter-button:focus::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #FFE17F;
+  top: 20px;
+  right: 1px;
+  z-index: -1;
+  outline: 2px solid #AF4FFF;
 }
 
 /* Карточки товаров */
@@ -1109,7 +1267,6 @@ a {
 .product-card {
   display: flex;
   flex-wrap: wrap;
-  width: 360px;
   justify-content: space-between;
 }
 
@@ -1120,6 +1277,7 @@ a {
   color: #000000;
   max-width: 226px;
   padding-top: 32px;
+  margin: 0;
 }
 
 .price {
@@ -1128,12 +1286,15 @@ a {
   text-align: right;
   color: #444444;
   padding-top: 32px;
+  margin: 0;
 }
 
-.product-button {
+/* .product-button {
   justify-content: center;
   align-content: center;
-}
+} */
+
+/* Кнопки */
 
 .load-more {
   font-family: 'raleway', "Verdana", sans-serif;
@@ -1141,7 +1302,19 @@ a {
   grid-column: 1 / 3;
   border: 3px solid #E5E5E5;
   align-items: center;
-  padding: 18px 294.5px 18px 294.5px;
+  padding: 18px 295px 18px 295px;
+}
+
+.load-more:hover {
+  outline: 3px solid #000000;
+}
+
+.load-more:active {
+  opacity: 0.3;
+}
+
+.load-more:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .pagination {
@@ -1161,6 +1334,20 @@ a {
   color: #444444;
 }
 
+.pagination-prev:hover {
+  color: #000000;
+}
+
+.pagination-prev:active {
+  opacity: 0.3;
+}
+
+.pagination-prev:focus {
+  outline: 2px solid #AF4FFF;
+  width: 132px;
+  height: 75px;
+}
+
 .pagination-next {
   font-family: 'Raleway', "Verdana", sans-serif;
   font-size: 18px;
@@ -1169,7 +1356,40 @@ a {
   color: #000000;
 }
 
+.pagination-next:hover {
+  color: #000000;
+}
+
+.pagination-next:active {
+  opacity: 0.3;
+}
+
+.pagination-next:focus {
+  outline: 2px solid #AF4FFF;
+  width: 132px;
+  height: 75px;
+}
 .pagination-link {
   font-size: 16px;
   line-height: 1.2;
+  width: 40px;
+  height: 40px;
+  padding-right: 15px;
+  opacity: 0.3;
+}
+
+.pagination-link:hover {
+  opacity: 1;
+}
+
+.pagination-link:active {
+  opacity: 0.1;
+}
+
+.pagination-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination-link .pagination-current {
+  opacity: 0.6;
 }

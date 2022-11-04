@@ -31,8 +31,9 @@
           Корзина</a>
         </div>
 
-      <nav class="main-navigation">
+      <nav class="main-navigation catalog-inner">
         <a class="catalog-link-main" href="catalog.html">Каталог товаров</a>
+        <!-- <input class="button-plus-check" id="sw" type="checkbox"> -->
         <a class="button-plus" href="#">+</a>
         <ul class="catalog-list">
           <li>
@@ -71,10 +72,8 @@
       </div>
     </header>
 
+  <div class="conteiner-inner">
     <main class="main-inner">
-    <div class="conteiner-inner">
-
-
       <aside class="filters">
         <h2 class="title-inner">фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -102,26 +101,22 @@
               <label  class="item-filters">
                 <input class="filter-check" type="radio" value="no">Нет</label>
           </fieldset>
-          <button class="button-gold" type="submit">Показать</button>
+          <button class="button-gold filter-button" type="submit">Показать</button>
         </form>
       </aside>
 
-      <select class="sorting">
-        <h2 class="sorting-title">Сортировка</h2>
-        <div class="choice">
-          <option value="popular">
-            <a href="#">Популярные</a>
-          </option>
-          <option value="cheap">
-            <a href="#">Сначала дешёвые</a>
-          </option>
-          <option value="expensive">
-            <a href="#">Сначала дорогие</a>
-          </option>
+      <section class="sorting">
+        <h2 class="title-inner">Сортировка:</h2>
+        <select class="choice">
+          <option value="popular">Популярные</option>
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <div class="button-sorting">
+          <a class="button-sorting-up" aria-label="По возрастанию"></a>
+          <a class="button-sorting-down" aria-label="По убыванию"></a>
         </div>
-          <a class="button-sorting-up" aria-label="По возрастанию">up</a>
-          <a class="button-sorting-down" aria-label="По убыванию">down</a>
-      </select>
+      </section>
 
       <section class="product-list">
         <article class="product-card">
@@ -165,8 +160,8 @@
           <a class="pagination-next">Вперёд</a>
         </article>
       </section>
-    </div>
-  </main>
+    </main>
+  </div>
 
     <footer class="page-footer">
       <div class="footer-container">
