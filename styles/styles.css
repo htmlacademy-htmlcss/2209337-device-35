@@ -95,17 +95,82 @@ a {
   gap: 24px;
 }
 
+.form-search {
+  position: relative;
+}
+
+.form-search::before {
+  position: absolute;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 13px;
+  left: 16px;
+}
+
+.form-search:disabled::before {
+  opacity: 0.3;
+}
+
 .search {
+  margin: 0;
+  padding: 10px 192px 10px 48px;
+  font: inherit;
+  background-color: #FFE17F;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
   font-size: 16px;
   line-height: 1.2;
-  opacity: 0.3;
   width: 360px;
+}
+
+.search:focus {
+  box-shadow: 0 0 0 .075rem #FFE17F,
+              0 0 0 .2rem #AF4FFF;
+  border-radius: 0;
+}
+
+.search::placeholder {
+  width: 300px;
+}
+
+.search:disabled {
+  opacity: 0.3;
 }
 
 .button-search {
   font-size: 16px;
   line-height: 1.2;
+  margin: 0;
+  padding: 10px 56px;
+  background-color: #FFE17F;
+  border: 2px solid #000000;
+  border-radius: 0 20px 20px 0;
   width: 160px;
+}
+
+.button-search:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.button-search:active {
+  background-color: #000000;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.button-search:focus {
+  background-color: #FFE17F;
+  box-shadow: 0 0 0 .075rem #FFE17F,
+              0 0 0 .2rem #AF4FFF;
+  border-radius: 0;
+}
+
+.button-search:disabled {
+  opacity: 0.3;
 }
 
 .login {
@@ -151,7 +216,7 @@ a {
   width: 50px;
   height: 51px;
   background-image: url(../img/button-plus.svg);
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   display: inline-block;
   opacity: 0.6;
 }
@@ -283,7 +348,7 @@ background-repeat: no-repeat;
   width: 100%;
   height: 8px;
   background-color: #FFE17F;
-  top: 20px;
+  top: 18px;
   right: 1px;
   z-index: -1;
 }
@@ -313,8 +378,8 @@ background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   height: 8px;
-  background-color: #FFE17F;
-  top: 20px;
+  background-color:#FFE17F;
+  top: 18px;
   right: 1px;
   z-index: -1;
   outline: 2px solid #AF4FFF;
@@ -369,19 +434,7 @@ background-repeat: no-repeat;
   margin: 290px 540px 0;
 }
 
-.slider-pagination-1 + .slider-pagination-2-3:hover {
-  opacity: 0.6;
-}
-
-.slider-pagination-1 + .slider-pagination-2-3:active {
-  opacity: 0.3;
-}
-
-.slider-pagination-1 + .slider-pagination-2-3:focus {
-  outline: 2px solid #AF4FFF;
-}
-
-.slider-pagination-1 {
+.slider-pagination-current {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -394,6 +447,18 @@ background-repeat: no-repeat;
   border-radius: 50%;
   border: 2px solid #000000;
   background-color: #FFF;
+}
+
+.slider-pagination-current:hover + .slider-pagination-2-3:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-current + .slider-pagination-2-3:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-current + .slider-pagination-2-3:focus {
+  border: 2px solid #AF4FFF;
 }
 
 .slide-gallery {
@@ -601,7 +666,8 @@ background-repeat: no-repeat;
 }
 
 .button-active:focus {
-  outline: 2px solid #AF4FFF;
+  box-shadow: 0 0 0 .09rem #FFFFFF,
+              0 0 0 .2rem #AF4FFF;
 }
 
 .information {
@@ -692,7 +758,8 @@ background-repeat: no-repeat;
 }
 
 .button-delivery:focus {
-  outline: 2px solid #AF4FFF;
+  box-shadow: 0 0 0 .075rem #FFFFFF,
+              0 0 0 .2rem #AF4FFF;
 }
 
 /* Адресс и контакты */
@@ -843,9 +910,28 @@ background-repeat: no-repeat;
 }
 
 .subscribe-input {
+  font: inherit;
   width: 560px;
-  opacity: 0.5;
+  background-color: #F0F0F0;
+  border: none;
   border-bottom: 3px solid #C4C4C4;
+  padding: 11px 0 13px 16px;
+  margin: 0;
+}
+
+.subscribe-input::placeholder {
+  opacity: 0.5;
+}
+
+.subscribe-input:focus {
+  background-color: #DCDCDC;
+  border: none;
+}
+
+.subscribe-input:invalid {
+    border: none;
+    border-bottom: 3px solid #FF3D3D;
+
 }
 
 .subscribe-button {
@@ -870,7 +956,9 @@ background-repeat: no-repeat;
 
 .subscribe-button:focus {
   color: #000000;
-  outline: 2px solid #AF4FFF;
+  opacity: 1;
+  box-shadow: 0 0 0 .09rem #FFFFFF,
+              0 0 0 .2rem #AF4FFF;
 }
 
 .free-conteiner {
@@ -1003,6 +1091,7 @@ background-repeat: no-repeat;
 .button-social:focus {
   fill: #FFFFFF;
   outline: 2px solid #AF4FFF;
+  border-radius: 0;
 }
 
 .footer-contacts {
