@@ -20,7 +20,7 @@
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" fill="#000"/></svg>
           Коля Петухов</a>
-          <a class="user-navigation-link" href="#">Выйти</a>
+          <a class="user-navigation-link login-inner" href="#">Выйти</a>
           <a class="user-navigation-link" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="10" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4Zm8-1H8v9h2V3Z" fill="#000"/></svg>
@@ -75,33 +75,81 @@
   <div class="conteiner-inner">
     <main class="main-inner">
       <aside class="filters">
-        <h2 class="title-inner">фильтр:</h2>
+        <h2 class="title-inner filter-title">фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
+          <fieldset class="catalog-filter-group">
             <legend class="text-filter">Стоимость</legend>
+            <div class="range">
+              <div class="range-scrale">
+                <div class="range-bar" style="left: 0; width: 120px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span></button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span></button>
+                </div>
+              </div>
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  от <input class="range-input" type="number" value="0" name="min-price">
+                </label>
+                <label class="catalog-filter-label">
+                  до <input class="range-input" type="number" value="5000" name="max-price" style="width: 60px">
+                </label>
+              </div>
+            </div>
+
           </fieldset>
-          <fieldset>
+          <fieldset class="catalog-filter-group">
             <legend class="text-filter">Цвет</legend>
               <label class="item-filters">
-                <input class="filter-check" type="checkbox" name="black" checked>Чёрный</label>
+                <input class="visually-hidden filter-check" type="checkbox" name="black" checked>
+                <span class="filter-box"></span>
+                <span class="filter-name">Чёрный</span>
+              </label>
+
               <label class="item-filters">
-                <input class="filter-check" type="checkbox" name="white" checked>Белый</label>
+                <input class="visually-hidden filter-check" type="checkbox" name="white" checked>
+                <span class="filter-box"></span>
+                <span class="filter-name">Белый</span>
+              </label>
+
               <label class="item-filters">
-                <input class="filter-check" type="checkbox" name="blue">Синий</label>
+                <input class="visually-hidden filter-check" type="checkbox" name="blue">
+                <span class="filter-box"></span>
+                <span class="filter-name">Синий</span>
+              </label>
+
               <label class="item-filters">
-                <input class="filter-check" type="checkbox" name="red">Красный</label>
+                <input class="visually-hidden filter-check" type="checkbox" name="red">
+                <span class="filter-box"></span>
+                <span class="filter-name">Красный</span>
+              </label>
+
               <label class="item-filters">
-                <input class="filter-check" type="checkbox" name="pink">Розовый</label>
+                <input class="visually-hidden filter-check" type="checkbox" name="pink">
+                <span class="filter-box"></span>
+                <span class="filter-name">Розовый</span>
+              </label>
+
             </legend>
           </fieldset>
-           <fieldset>
+          <fieldset class="catalog-filter-group">
             <legend class="text-filter">Bluetooth</legend>
+
               <label class="item-filters">
-                <input class="filter-check" type="radio" value="yes" checked>Есть</label>
+                <input class="visually-hidden filter-check" type="radio" value="yes" checked>
+                <span class="filter-box"></span>
+                <span class="filter-name">Есть</span>
+              </label>
+
               <label  class="item-filters">
-                <input class="filter-check" type="radio" value="no">Нет</label>
+                <input class="visually-hidden filter-check" type="radio" value="no">
+                <span class="filter-box"></span>
+                <span class="filter-name">Нет</span>
+              </label>
           </fieldset>
-          <button class="button-gold filter-button" type="submit">Показать</button>
+
+          <button class="button-filter" type="submit">Показать</button>
         </form>
       </aside>
 

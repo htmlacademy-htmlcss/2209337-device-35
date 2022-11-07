@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Rubik, "Arial", sans-serif;
+  font-family: Rubik, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -194,6 +194,10 @@ a {
   outline: 2px solid #AF4FFF;
 }
 
+.login-inner {
+  opacity: 0.3;
+}
+
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -231,7 +235,7 @@ a {
 } */
 
 .catalog-link-main {
-  font-family: Raleway, "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -280,7 +284,7 @@ a {
 }
 
 .navigation-link {
-  font-family: Raleway, "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -332,7 +336,7 @@ a {
 }
 
 .button-gold {
-  font-family: Raleway, "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   display: inline-block;
@@ -449,15 +453,15 @@ a {
   background-color: #FFF;
 }
 
-.slider-pagination-current:hover + .slider-pagination-2-3:hover {
+.slider-pagination-current:hover + .slider-pagination-2-3 {
   opacity: 0.6;
 }
 
-.slider-pagination-current + .slider-pagination-2-3:active {
+.slider-pagination-current:active + .slider-pagination-2-3 {
   opacity: 0.3;
 }
 
-.slider-pagination-current + .slider-pagination-2-3:focus {
+.slider-pagination-current:focus + .slider-pagination-2-3 {
   border: 2px solid #AF4FFF;
 }
 
@@ -480,7 +484,7 @@ a {
 }
 
 .gallery-title {
-  font-family: Raleway, "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 50px;
   line-height: 1;
   margin-bottom: 30px;
@@ -525,7 +529,7 @@ a {
 }
 
 .catalog-link {
-  font-family: Raleway, "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.3;
 }
@@ -611,7 +615,7 @@ a {
 }
 
 .info-title {
-  font-family: "raleway", "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 50px;
   line-height: 1;
   margin-bottom: 34px;
@@ -623,7 +627,7 @@ a {
 }
 
 .button-gold-info {
-  font-family: Raleway, "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   display: inline-block;
@@ -654,7 +658,7 @@ a {
   height: 40px;
   background-color: #000000;
   color: #FFE17F;
-  font-family: Raleway, "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   border: none;
@@ -713,7 +717,7 @@ a {
 }
 
 .button-delivery {
-  font-family: "raleway", "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 20px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -777,7 +781,7 @@ a {
 }
 
 .about-title {
-  font-family: "raleway", "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 50px;
   line-height: 1;
   padding-bottom: 48px;
@@ -817,12 +821,18 @@ a {
   padding-bottom: 19px;
 }
 
+.delivery-item::marker {
+  width: 8px;
+  height: 8px;
+  color: #FFC700;
+}
+
 .delivery-item:last-child {
   padding-bottom: 30px;
 }
 
 .contacts-title {
-  font-family: "raleway", "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 50px;
   line-height: 1;
   padding-bottom: 48px;
@@ -890,7 +900,7 @@ a {
 
 .subscribe-title {
   width: 350px;
-  font-family: "raleway", "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 50px;
   line-height: 1;
   margin: 64px 252px 144px 7px;
@@ -925,17 +935,16 @@ a {
 
 .subscribe-input:focus {
   background-color: #DCDCDC;
-  border: none;
+  border: 0 solid #C4C4C4;
 }
 
 .subscribe-input:invalid {
-    border: none;
-    border-bottom: 3px solid #FF3D3D;
-
+  border: 0 solid #C4C4C4;
+  border-bottom: 3px solid #FF3D3D;
 }
 
 .subscribe-button {
-  font-family: "raleway", "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.1;
   letter-spacing: 0.2em;
@@ -959,6 +968,10 @@ a {
   opacity: 1;
   box-shadow: 0 0 0 .09rem #FFFFFF,
               0 0 0 .2rem #AF4FFF;
+}
+
+.subscribe-button:disabled {
+  opacity: 0.3;
 }
 
 .free-conteiner {
@@ -1035,9 +1048,7 @@ a {
 }
 
 .button-footer {
-  font-family: "raleway", "Verdana", sans-serif;
-  font-size: 18px;
-  line-height: 1.1;
+  font-family: Raleway, Verdana, sans-serif;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -1045,7 +1056,6 @@ a {
 .button-footer:hover {
   color: #FFC700;
   border-bottom: 2px solid #FFC700;
-  padding-bottom: 4px;
 }
 
 .button-footer:active {
@@ -1143,7 +1153,7 @@ a {
 /* Каталог товаров */
 .page-inner {
   width: 100%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .catalog-inner {
@@ -1156,13 +1166,13 @@ a {
 }
 
 .main-inner {
-  width: 1660px;
   margin: 0 auto;
   display: grid;
+  justify-content: center;
   grid-template-areas:
     "filters sorting"
     "filters product-list";
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 320px 840px;
   font-size: 16px;
   line-height: 1.2;
   color: #000000;
@@ -1191,6 +1201,18 @@ a {
   gap: 16px;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
 .img-breadcrumbs {
   background-image: url(../img/breadcrumbs.svg);
   background-repeat: no-repeat;
@@ -1202,10 +1224,12 @@ a {
 /* Сортировка */
 
 .title-inner {
-  font-family: Raleway;
+  font-family: Raleway, "Verdana", sans-serif;
   font-size: 16px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 25.5px 0 25.5px 40px;
+  margin: 0;
 }
 
 .sorting {
@@ -1218,7 +1242,6 @@ a {
 
 .choice {
   height: 30px;
-  font-family: Rubik;
   font-size: 18px;
   line-height: 1.6;
   border: none;
@@ -1235,6 +1258,10 @@ a {
 
 .choice:focus {
   outline:2px solid #AF4FFF;
+}
+
+.choice:disabled {
+  opacity: 0.1;
 }
 
 .button-sorting {
@@ -1274,20 +1301,176 @@ a {
 /* Фильтры */
 
 .filters {
-
-
   grid-area: filters;
-  width: 320px;
+  margin: 0 60px;
+  display: block;
+  width: 200px;
+}
 
+.filter-title {
+  padding-left: 0;
+  margin-bottom: 35px;
 }
 
 .text-filter {
   font-size: 18px;
   line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
 }
 
-.button-gold .filter-button {
-  font-family: Raleway, "Verdana", sans-serif;
+.catalog-filter-group {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  margin-top: 12px;
+  border: none;
+  position: relative;
+}
+
+.catalog-filter-group::before {
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  top: -55px;
+}
+
+/* Ренж-сладер */
+.range-scrale {
+  position: relative;
+  height: 2px;
+  background-color: #DCDCDC;
+  width: 200px;
+  margin-bottom: 11px;
+}
+
+.range-bar {
+  position: absolute;
+  background-color: #000000;
+  height: 2px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #EBEBEB;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  opacity: 0.5;
+}
+
+.range-toggle:active {
+  background-color: #000000;
+}
+
+.range-toggle:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.catalog-filter-label {
+  font: inherit;
+  font-size: 14px;
+  opacity: 0.3;
+}
+
+.range-input {
+  font: inherit;
+  font-size: 14px;
+  width: 70px;
+  opacity: 0.5;
+  border: none;
+  background-color: #F0F0F0;
+}
+
+.range-input:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+/* Чекбоксы */
+
+.item-filters {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.item-filters:not(:last-child) {
+  padding-bottom: 17px;
+}
+
+.item-filters:hover {
+  opacity: 0.6;
+}
+
+.item-filters:active {
+  opacity: 0.3;
+}
+
+.filters-box:focus {
+  box-shadow: 0 0 0 .09rem #FFFFFF,
+              0 0 0 .2rem #AF4FFF;
+}
+
+.item-filters:disabled {
+  opacity: 0.1;
+}
+
+.filter-box {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  outline: 2px solid #000000;
+  border-radius: 3px;
+}
+
+.filter-check[type="checkbox"]:checked + .filter-box::before {
+  position: absolute;
+  background-image: url(../img/checked.svg);
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  content: "";
+}
+
+.filter-check[type="radio"] + .filter-box {
+  border-radius: 50%;
+}
+
+.filter-check[type="radio"]:checked + .filter-box::before {
+  position: absolute;
+  content: "";
+  background-color: #000000;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+}
+
+.button-filter {
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   display: inline-block;
@@ -1298,7 +1481,7 @@ a {
   border: none;
 }
 
-.button-gold .filter-button::before {
+.button-filter::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1309,7 +1492,7 @@ a {
   z-index: -1;
 }
 
-.button-gold .filter-button:hover::before {
+.button-filter:hover::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1319,7 +1502,7 @@ a {
   top: 3px;
 }
 
-.button-gold .filter-button:active::before {
+.button-filter:active::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1329,7 +1512,7 @@ a {
   top: 3px;
 }
 
-.button-gold .filter-button:focus::before {
+.button-filter:focus::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1386,7 +1569,7 @@ a {
 /* Кнопки */
 
 .load-more {
-  font-family: 'raleway', "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   text-transform: uppercase;
   grid-column: 1 / 3;
   border: 3px solid #E5E5E5;
@@ -1403,7 +1586,8 @@ a {
 }
 
 .load-more:focus {
-  outline: 2px solid #AF4FFF;
+  box-shadow: 0 0 0 .09rem #FFFFFF,
+              0 0 0 .2rem #AF4FFF;
 }
 
 .pagination {
@@ -1416,7 +1600,7 @@ a {
 }
 
 .pagination-prev {
-  font-family: 'Raleway', "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -1438,7 +1622,7 @@ a {
 }
 
 .pagination-next {
-  font-family: 'Raleway', "Verdana", sans-serif;
+  font-family: Raleway, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.1;
   text-transform: uppercase;
