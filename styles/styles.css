@@ -1082,7 +1082,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  padding: 77px;
+  margin: 77px;
 }
 
 .button-social {
@@ -1483,21 +1483,95 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 360px);
   grid-column-gap: 40px;
-  grid-row-gap: 44px;
+  grid-row-gap: 116px;
   padding: 70px 40px 78px 40px;
   grid-area: product-list;
 }
 
-.product-card {
+.effect {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.hover-effect-button {
+  position: relative;
+  width: 360px;
+  height: 380px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background 0.5s ease;
+}
+
+.hover-effect-button:hover .overlay {
+  display: block;
+  background: rgba(240, 240, 240, 0.8);
+}
+
+.hover-effect-button:active .overlay {
+  display: block;
+  background: rgba(240, 240, 240, 0.8);
+}
+
+.button-product {
+  font-family: Raleway, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  top: 170px;
+  left: 105px;
+}
+
+.button-product::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #FFE17F;
+  top: 20px;
+  right: 1px;
+  z-index: -1;
+}
+
+.button-product:active::before {
+  background-color: #FFC700;
+}
+
+.hover-effect-button:hover .button-product {
+  opacity: 1;
+  display: block;
+}
+
+.hover-effect-button:active .button-product {
+  opacity: 1;
+  display: block;
+}
+
+.effect:hover {
+  opacity: 0.6;
+}
+
+.effect:active {
+ opacity: 0.3;
 }
 
 .title-product {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.1;
+  letter-spacing: -0.02em;
   color: #000000;
   max-width: 226px;
   padding-top: 32px;
@@ -1512,10 +1586,6 @@ a {
   padding-top: 32px;
   margin: 0;
 }
-/* .product-button {
-  justify-content: center;
-  align-content: center;
-} */
 
 /* Кнопки */
 
@@ -1720,7 +1790,7 @@ a {
   text-transform: uppercase;
   display: flex;
   background-color: #FFFFFF;
-  padding: 15px 20px;
+  padding: 15.5px 20px;
   margin: 20px;
 }
 
