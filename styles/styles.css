@@ -123,7 +123,7 @@ a {
   border-radius: 50px 0 0 50px;
   font-size: 16px;
   line-height: 1.2;
-  width: 360px;
+  width: 350px;
 }
 
 .search:focus {
@@ -223,36 +223,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   column-gap: 40px;
   padding: 0 60px;
-}
-
-.button-plus-check {
-  display: none;
-}
-
-.button-plus-check:checked + .button-plus::before {
-  background-image: url(../img/button-minus.svg);
-}
-
-.button-plus {
-  font-size: 0;
-  margin-right: 200px;
-  width: 50px;
-  height: 51px;
-  background-image: url(../img/button-plus.svg);
-  background-repeat: no-repeat;
-  display: inline-block;
-  opacity: 0.6;
-}
-
-.button-plus::before {
-  background-image: url(../img/button-plus.svg);
-  display: inline-block;
-  font-size: 0;
-  margin-right: 200px;
-  width: 50px;
-  height: 50px;
 }
 
 .catalog-link-main {
@@ -260,6 +233,7 @@ a {
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  position: relative;
 }
 
 .catalog-link-main:hover {
@@ -274,33 +248,54 @@ a {
   outline: 2px solid #AF4FFF;
 }
 
-.catalog-list {
-  font-size: 16px;
-  list-style-type: none;
+.button-plus {
+  font-size: 0;
+  width: 50px;
+  height: 52px;
+  background-image: url(../img/button-plus.svg);
+  display: inline-block;
+  margin-right: 145px;
+}
+
+.subcatalog-list {
   position: absolute;
+  right: 94px;
+  bottom: -96px;
+  background-color: #FFE17F;
+  width: 1140px;
+  height: 180px;
+  z-index: 1;
+  padding-left: 20px;
   display: none;
-  grid-template-columns: repeat(3, 1fr);
+}
+
+.subcatalog-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   row-gap: 20px;
   column-gap: 40px;
-  margin-top: 35px;
+  max-width: 250px;
+  max-height: 100px;
+  list-style-type: none;
+  margin: 0;
+  display: none;
 }
 
-.catalog-item {
+.subcatalog-link {
   font-size: 16px;
   line-height: 1.1;
-  margin: 0;
-  padding: 0;
 }
 
-.catalog-item:hover {
+.subcatalog-link:hover {
   opacity: 0.6;
 }
 
-.catalog-item:active {
+.subcatalog-link:active {
   opacity: 0.3;
 }
 
-.catalog-item:focus {
+.subcatalog-link:focus {
   outline: 2px solid #AF4FFF;
 }
 
@@ -1700,12 +1695,12 @@ a {
   background-color: #000000;
   color: #FFFFFF;
   min-height: 100px;
-
+  display: none;
 }
 
-.popover-open {
+/* .popover-open {
   display: block;
-}
+} */
 
 .popover-content {
   height: 100%;
