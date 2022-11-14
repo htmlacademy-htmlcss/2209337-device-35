@@ -176,7 +176,7 @@ a {
 }
 
 .login {
-  padding-right: 150px;
+  padding-right: 130px;
 }
 
 .navigation-icon {
@@ -197,27 +197,17 @@ a {
 }
 
 .basket-number {
-  position: relative;
-  z-index: 1;
-}
-
-.basket-number::before {
-  position: absolute;
-  content: "";
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
   width: 22px;
   height: 22px;
   border-radius: 50%;
   background-color: #FFFFFF;
-  z-index: -1;
-  right: -6px;
-  top: -1;
+  position: relative;
 }
 
 /* Поповер корзина */
-
-.popover-cart {
-  position: relative;
-}
 
 .popover {
   position: absolute;
@@ -236,14 +226,10 @@ a {
 
 .popover-open {
   display: block;
-}
-
-.popover-content {
-  height: 100%;
   position: relative;
 }
 
-.popover-poligon::before {
+.popover-open::before {
   position: absolute;
   content: "";
   width: 0;
@@ -1544,12 +1530,12 @@ a {
 
 .toggle-min {
   top: -8px;
-  left: -9px;
+  left: -17px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -17px;
 }
 
 .catalog-filter-label {
