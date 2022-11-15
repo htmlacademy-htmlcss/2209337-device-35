@@ -209,10 +209,14 @@ a {
 
 /* Поповер корзина */
 
+.header-navigation {
+  position: relative;
+}
+
 .popover {
   position: absolute;
-  top: 140px;
-  right: 262px;
+  top: 87px;
+  right: -26px;
   z-index: 1;
   box-sizing: border-box;
   width: 320px;
@@ -367,7 +371,9 @@ a {
   width: 50px;
   height: 51px;
   background-image: url(../img/button-plus.svg);
-  margin-right: 213px;
+  background-repeat: no-repeat;
+  margin-right: 205px;
+  opacity: 0.3;
 }
 
 .subcatalog-list {
@@ -509,7 +515,6 @@ a {
 }
 
 .button-gold:focus {
-  max-height: 40px;
   outline: 2px solid #AF4FFF;
 }
 
@@ -1141,15 +1146,6 @@ a {
 .footer-address {
   width: 240px;
   padding-right: 90px;
-  position: relative;
-}
-
-.line-footer {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height:7px;
-  background-color: #FFC700;
 }
 
 .logo-footer {
@@ -1175,9 +1171,20 @@ a {
 .contacts-address-text {
   color: #FFFFFF;
   font-size: 16px;
+  line-height: 1.2;
   width: 100%;
   margin: 0;
   padding-bottom: 57px;
+  position: relative;
+}
+
+.contacts-address-text::before {
+  position: absolute;
+  content: "";
+  bottom: -16px;
+  width: 80px;
+  height:7px;
+  background-color: #FFC700;
 }
 
 .footer-navigation {
@@ -1847,14 +1854,12 @@ a {
   opacity: 0.6;
 }
 
-.user-navigation-link .link-basket {
+.user-navigation-link {
   position: relative;
 }
 
 .popover {
   position: absolute;
-  top: 140px;
-  right: 262px;
   z-index: 1;
   box-sizing: border-box;
   width: 320px;
@@ -1866,9 +1871,9 @@ a {
   display: none;
 }
 
-.popover-open {
+/* .popover-open {
   display: block;
-}
+} */
 
 .popover-content {
   height: 100%;
@@ -1953,8 +1958,8 @@ a {
   text-transform: uppercase;
   display: flex;
   background-color: #FFFFFF;
-  padding: 15.5px 20px;
-  margin: 20px;
+  padding: 10px 23px;
+  margin: 16px;
 }
 
 .button-basket:hover {
@@ -2110,11 +2115,14 @@ a {
 .delivery-form-field:active {
   color: #000000;
   border: none;
+  outline: none;
 }
 
 .delivery-form-field:focus {
   box-shadow: 0 0 0 .1rem #FFFFFF,
               0 0 0 .2rem #AF4FFF;
+  border: none;
+  outline: none;
 }
 
 .delivery-form-field:disabled {
@@ -2137,24 +2145,24 @@ a {
   grid-row: 2 / 3;
 }
 
-.field-human::before {
+.content-human::before {
   position: absolute;
   content: "";
+  left: 400px;
+  top: 230px;
   width: 15px;
   height: 12px;
-  top: 230px;
-  left: 405px;
   background-image: url(../img/modal-human.svg);
   background-repeat: no-repeat;
 }
 
-.field-email-img::before {
+.content-email::before {
   position: absolute;
   content: "";
+  top: 230px;
+  right: 105px;
   width: 15px;
   height: 12px;
-  top: 230px;
-  right: 100px;
   background-image: url(../img/modal-mail.svg);
   background-repeat: no-repeat;
 }
