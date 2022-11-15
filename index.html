@@ -13,7 +13,7 @@
       </a>
         <div class="header-navigation">
 
-          <form class="form-search" action="#" method="post" disabled>
+          <form class="form-search" action="#" method="post">
             <input class="search" type="search" placeholder="Поиск по сайту" >
             <button class="button-search" type="submit">Найти</button>
           </form>
@@ -32,25 +32,24 @@
           Корзина</a>
 
             <div class="popover popover-open">
-                <div class="popover-content">
-                  <div class="cart-item">
-                    <img src="img/product-1-small 1.jpg" width="39px" height="43px" alt="Любительская селфи-палка">
-                    <p class="popover-text">Любительская<br> селфи-палка</p>
-                    <span class="delit-basket"></span>
-                </div>
+              <div class="popover-content">
                 <div class="cart-item">
-                  <img src="img/product-1-small 2.jpg" width="39px" height="43px" alt="Профессиональная селфи-палка">
-                  <p class="popover-text">Профессиональная<br> селфи-палка</p>
+                  <img src="img/product-1-small-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                  <p class="popover-text">Любительская<br> селфи-палка</p>
                   <span class="delit-basket"></span>
-                </div>
-                <div class="info-basket">
-                  <p class="popover-text-info">Товаров: 2</p>
-                  <p class="popover-text-info">Сумма: 2000 ₽</p>
-                </div>
-                <a class="button-basket" type="button" href="#">Открыть корзину</a>
-               </div>
+              </div>
+              <div class="cart-item">
+                <img src="img/product-1-small-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                <p class="popover-text">Профессиональная<br> селфи-палка</p>
+                <span class="delit-basket"></span>
+              </div>
+              <div class="info-basket">
+                <p class="popover-text-info">Товаров: 2</p>
+                <p class="popover-text-info">Сумма: 2000 ₽</p>
+              </div>
+              <a class="button-basket" href="#">Открыть корзину</a>
+              </div>
             </div>
-
         </div>
 
 
@@ -149,6 +148,7 @@
       </section>
 
       <section class="catalog">
+        <h1 class="visually-hidden">Каталог</h1>
         <a class="catalog-link vr" href="#">Виртуальная реальность</a>
         <a class="catalog-link monopods" href="#">Моноподы<br> для селфи</a>
         <a class="catalog-link cameras" href="#">Экшн-камеры</a>
@@ -204,7 +204,7 @@
                 <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </address>
             <h2 class="contacts-title-2">Время работы</h2>
-            <p class="contacts-text">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+            <p class="contacts-text">пн-пт: с 10:00 до 22:00<br>сб-вс: с 10:00 до 19:00</p>
             <a class="button-gold" href="#">Напишите нам</a>
           </section>
       </div>
@@ -216,7 +216,7 @@
           <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <div class="subscribe-activ">
-          <form class="subscribe-form" action="" method="post">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
@@ -237,7 +237,6 @@
               <path d="M27.22 0v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.41 0 5.91 1.2 7.51 3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2Zm24.11 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9Zm33.83-10-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2Zm1.3 0h7.6v25.2h-7.6V10.1Zm10.21 12.6c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3Zm39.23 6.5c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9Z" fill="#FFC700"/><path d="M83.46 0v10.1L91.06 0h-7.6Z" fill="#FFC700"/></svg>
           </a>
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <span class="line-footer"></span>
         </div>
         <section class="footer-navigation">
           <div class="button-footer-container">
@@ -278,16 +277,15 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <form class="delivery-form" action="" method="post">
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
 
             <div class="conteiner-form-login">
               <label class="field-modal content-human" for="delivery-name">Ваше имя:</label>
               <input class="delivery-form-field field-name" type="text" id="delivery-name" placeholder="Введите имя">
 
 
-              <label class="field-modal" for="delivery-email">Ваш e-mail:</label>
+              <label class="field-modal content-email" for="delivery-email">Ваш e-mail:</label>
               <input class="delivery-form-field field-email" type="email" id="delivery-email" placeholder="почта">
-              <span class="field-email-img"></span>
               <small class="modal-disable">Забавный у вас адрес</small>
             </div>
 
