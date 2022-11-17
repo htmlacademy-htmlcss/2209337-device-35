@@ -73,7 +73,6 @@ a {
   margin-top: -20px;
   margin-bottom: -20px;
   margin-left: 60px;
-  width: 100%;
   height: 36px;
 }
 
@@ -347,22 +346,22 @@ a {
   padding: 0 60px;
 }
 
-.catalog-link-main {
+.navigation-link {
   font-family: Raleway, Verdana, sans-serif;
-  line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  position: relative;
 }
 
-.catalog-link-main:hover {
+.navigation-link:hover {
   opacity: 0.6;
 }
 
-.catalog-link-main:active {
+.navigation-link:active {
   opacity: 0.3;
 }
 
-.catalog-link-main:focus {
+.navigation-link:focus {
   outline: 2px solid #AF4FFF;
 }
 
@@ -378,13 +377,14 @@ a {
 
 .subcatalog-list {
   position: absolute;
-  right: 94px;
-  bottom: -96px;
+  left: 432px;
+  top: 208px;
   background-color: #FFE17F;
   width: 1140px;
-  height: 180px;
   z-index: 1;
   padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 27px;
   display: none;
 }
 
@@ -392,10 +392,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
   column-gap: 40px;
   max-width: 250px;
-  max-height: 100px;
+  max-height: 130px;
   list-style-type: none;
   margin: 0;
   display: none;
@@ -418,43 +418,18 @@ a {
   outline: 2px solid #AF4FFF;
 }
 
-.navigation-link {
-  font-family: Raleway, Verdana, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-.navigation-link:hover {
-  opacity: 0.6;
-}
-
-.navigation-link:active {
-  opacity: 0.3;
-}
-
-.navigation-link:focus {
-  outline: 2px solid #AF4FFF;
-}
-
-/* Главная страница */
-
-.gallery {
-  width: 1160px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .nav-number-one {
-  background-image: url(../img/01.svg);
+  background-image: url(../img/nav-number-one.svg);
   background-repeat: no-repeat;
   width: 200px;
   height: 120px;
   margin-left: auto;
+  margin-right: 40px;
   margin-top: 12px;
 }
 
 .nav-number-two {
-  background-image: url(../img/02.svg);
+  background-image: url(../img/nav-number-two.svg);
   background-repeat: no-repeat;
   width: 230px;
   height: 120px;
@@ -463,12 +438,20 @@ a {
 }
 
 .nav-number-three {
-  background-image: url(../img/03.svg);
+  background-image: url(../img/nav-number-three.svg);
   background-repeat: no-repeat;
   width: 230px;
   height: 120px;
   margin-left: auto;
   margin-top: 12px;
+}
+
+/* Главная страница */
+
+.gallery {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .button-gold {
@@ -765,7 +748,7 @@ a {
   position: absolute;
   border-left: 7px solid #000;
   height: 320px;
-  left: -53px;
+  left: -55px;
   top: 5px;
 }
 
@@ -816,6 +799,8 @@ a {
 .button-active:focus {
   box-shadow: 0 0 0 .09rem #FFFFFF,
               0 0 0 .2rem #AF4FFF;
+  border: none;
+  outline: none;
 }
 
 .img-info-delivery {
@@ -876,6 +861,10 @@ a {
 
 .button-delivery:hover::before {
   background-color: #FFC700;
+}
+
+.button-delivery:focus::before {
+  background-color: #FFE17F;
 }
 
 .button-delivery:active {
@@ -989,7 +978,7 @@ a {
   color: #444444;
 }
 
-.contacts-title-2 {
+.contacts-title-inner {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
@@ -1103,6 +1092,7 @@ a {
 .subscribe-button:focus {
   color: #000000;
   opacity: 1;
+  outline: 2px solid #C4C4C4;
   box-shadow: 0 0 0 .09rem #FFFFFF,
               0 0 0 .2rem #AF4FFF;
 }
@@ -1153,7 +1143,7 @@ a {
   display: inline-block;
   margin-left: auto;
   height: 36px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .logo-footer:hover {
@@ -1279,13 +1269,15 @@ a {
 
 .contacts-phone-footer:focus {
   color: #FFFFFF;
+  border: none;
   outline: 2px solid #AF4FFF;
 }
 
 .htmlacademy-link {
-  padding-top: 60px;
-  padding-left: 65px;
+  margin-top: 60px;
+  margin-left: 65px;
   height: 33px;
+  width: 115px;
   fill: #FFC700;
 }
 
@@ -1300,6 +1292,7 @@ a {
 
 .htmlacademy:focus {
   height: 33px;
+  width: 115px;
   border: none;
   outline: 2px solid #AF4FFF;
   fill: #FFC700;
@@ -1829,6 +1822,7 @@ a {
   width: 132px;
   height: 75px;
 }
+
 .pagination-link {
   font-size: 16px;
   line-height: 1.2;
@@ -1972,6 +1966,7 @@ a {
 .button-basket:active {
   opacity: 0.3;
 }
+
 .button-basket:focus {
   box-shadow: 0 0 0 .1rem #000000,
               0 0 0 .2rem #AF4FFF;
