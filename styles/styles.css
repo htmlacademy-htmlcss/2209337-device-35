@@ -97,25 +97,26 @@ a {
   content: "";
   width: 16px;
   height: 16px;
-  top: 12px;
+  top: 11px;
   left: 16px;
 }
 
-/* .form-search:disabled::before {
+.form-search:disabled::before {
   opacity: 0.3;
-} */
+}
 
 .search {
   margin: 0;
-  padding: 6px 306px 7px 48px;
+  padding: 7px 0 7px 48px;
   font: inherit;
   background-color: #FFE17F;
   border: 2px solid #000000;
-  border-right: 0;
+  color: #000000;
+  border-right: 1px;
   border-radius: 50px 0 0 50px;
   font-size: 16px;
   line-height: 1.2;
-  width: 350px;
+  width: 358px;
 }
 
 .search:active {
@@ -132,9 +133,9 @@ a {
   width: 300px;
 }
 
-/* .search:disabled {
+.search:disabled {
   opacity: 0.3;
-} */
+}
 
 .button-search {
   font-size: 16px;
@@ -143,6 +144,7 @@ a {
   padding: 8px 56px;
   background-color: #FFE17F;
   border: 2px solid #000000;
+  border-right: 1px;
   border-radius: 0 20px 20px 0;
   width: 160px;
 }
@@ -177,7 +179,7 @@ a {
 }
 
 .login {
-  margin-right: 160px;
+  margin-right: 150px;
 }
 
 .navigation-icon {
@@ -345,7 +347,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
+  padding: 11px 60px;
 }
 
 .navigation-link {
@@ -368,19 +370,26 @@ a {
   outline: 2px solid #AF4FFF;
 }
 
-.button-plus {
-  font-size: 0;
+.catalog-button {
+  position: relative;
+  margin-right: 300px;
+}
+
+.catalog-button::before {
+  position: absolute;
+  content: "";
   width: 50px;
   height: 51px;
   background-image: url(../img/button-plus.svg);
   background-repeat: no-repeat;
-  margin-right: 205px;
   opacity: 0.3;
+  left: 243px;
+  bottom: -9px;
 }
 
 .subcatalog-list {
   position: absolute;
-  left: 432px;
+  left: 95px;
   top: 208px;
   background-color: #FFE17F;
   width: 1140px;
@@ -502,7 +511,7 @@ a {
   top: 3px;
 }
 
-.button-gold:focus {
+.button-gold:focus-visible {
   outline: 2px solid #AF4FFF;
 }
 
@@ -1277,9 +1286,11 @@ a {
   outline: 2px solid #AF4FFF;
 }
 
-.htmlacademy {
-  margin-top: 60px;
-  margin-left: 32px;
+.htmlacademy svg {
+  display: inline-block;
+  margin-top: 57px;
+  margin-left: 67px;
+  padding: 1px;
   fill: #FFC700;
 }
 
@@ -1296,6 +1307,7 @@ a {
   border: none;
   outline: 2px solid #AF4FFF;
   fill: #FFC700;
+  padding: 1px;
 }
 
 /* Каталог товаров */
@@ -1306,7 +1318,7 @@ a {
 }
 
 .catalog-inner {
-  padding: 0 60px 18px;
+  padding: 10px 60px 30px;
 }
 
 .conteiner-inner {
@@ -1849,6 +1861,7 @@ a {
 
 .user-navigation-link {
   position: relative;
+  padding-right: 5px;
 }
 
 /* Поповер корзина */
