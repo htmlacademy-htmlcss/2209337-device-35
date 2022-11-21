@@ -119,15 +119,9 @@ a {
   width: 358px;
 }
 
-.search:active {
+/* .search:active {
   color: #000000;
-}
-
-.search:focus {
-  box-shadow: 0 0 0 .075rem #FFE17F,
-              0 0 0 .2rem #AF4FFF;
-  outline: none;
-}
+} */
 
 .search::placeholder {
   width: 300px;
@@ -135,6 +129,12 @@ a {
 
 .search:disabled {
   opacity: 0.3;
+}
+
+.search:focus {
+  border: none;
+  box-shadow: 0 0 0 .1rem #FFE17F,
+              0 0 0 .2rem #AF4FFF;
 }
 
 .button-search {
@@ -161,7 +161,6 @@ a {
 }
 
 .button-search:focus {
-  background-color: #FFE17F;
   box-shadow: 0 0 0 .075rem #FFE17F,
               0 0 0 .2rem #AF4FFF;
 }
@@ -1107,7 +1106,8 @@ a {
 .subscribe-button:focus {
   color: #000000;
   opacity: 1;
-  outline: 2px solid #C4C4C4;
+  border: 2px solid #C4C4C4;
+  outline: none;
   box-shadow: 0 0 0 .09rem #FFFFFF,
               0 0 0 .2rem #AF4FFF;
 }
@@ -1760,8 +1760,8 @@ a {
   grid-column: 1 / 3;
   border: 3px solid #E5E5E5;
   align-items: center;
-  padding: 16px 290px 16px 290px;
-  margin-bottom: -57px;
+  padding: 16px 290px;
+  margin-bottom: -58px;
 }
 
 .load-more:hover {
@@ -1773,6 +1773,8 @@ a {
 }
 
 .load-more:focus {
+  border: 2px solid #C4C4C4;
+  outline: none;
   box-shadow: 0 0 0 .09rem #FFFFFF,
               0 0 0 .2rem #AF4FFF;
 }
